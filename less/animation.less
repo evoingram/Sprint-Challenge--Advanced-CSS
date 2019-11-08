@@ -1,0 +1,20 @@
+html,
+body {
+	img {
+		.sharedAnimation(topDown, 1s);
+	}
+
+	p {
+		.sharedAnimation(topDown, 2s);
+	}
+}
+
+@keyframes topDown {
+	from {
+		top: -15vh;
+	}
+
+	to {
+		top: 0;
+	}
+}
