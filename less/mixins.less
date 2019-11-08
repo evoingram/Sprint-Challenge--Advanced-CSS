@@ -1,1 +1,60 @@
 // Mixins Here
+.column() {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	flex-wrap: nowrap;
+	justify-items: center;
+	align-items: center;
+	text-align: center;
+}
+
+.columnNC {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	flex-wrap: nowrap;
+}
+
+.columnWrap() {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-items: center;
+	align-items: center;
+	text-align: center;
+}
+
+.noWrapRow() {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-items: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.button(@color, @bRadius) {
+	background-color: @color;
+	border-radius: @bRadius;
+	color: white;
+	width: 35%;
+	justify-content: center;
+	padding: 1%;
+
+	&:hover {
+		background-color: white;
+		color: @btn-bg-color;
+		border: 1px solid @btn-bg-color;
+	}
+}
+
+.sharedAnimation(@animation, @delay) {
+	transform: translateY(0);
+	animation-name: @animation;
+	animation-timing-function: ease;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-delay: @delay;
+}

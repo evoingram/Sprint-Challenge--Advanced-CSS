@@ -1,0 +1,145 @@
+@media (@phone) {
+	.navMenu {
+		width: 100%;
+		.sharedAnimation(topDown, 0s);
+	}
+
+	h1 {
+		font-size: 2rem;
+		.sharedAnimation(topDown, 0s);
+	}
+
+	a {
+		font-size: 1rem;
+	}
+
+	flex-wrap: wrap;
+
+	.home {
+		width: 100%;
+
+		.launch,
+		.sky {
+			display: none;
+			width: 0;
+			padding: 0;
+			margin: 0;
+		}
+
+		.space-images {
+			display: flex;
+			width: 100%;
+
+			.blast {
+				order: 1;
+				width: 100%;
+
+				img {
+					order: 1;
+					width: 100%;
+					.columnNC();
+				}
+			}
+		}
+
+		.visit-planets {
+			display: flex;
+			width: 100%;
+			flex-direction: column;
+			flex-wrap: wrap;
+		}
+
+		.walk,
+		#walk {
+			display: flex;
+			width: 100%;
+			flex-wrap: wrap;
+			flex-direction: row;
+			padding: 0;
+			justify-content: center;
+
+			.walk-text {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				width: 100%;
+				padding: 0;
+				order: 2;
+
+				#walkH {
+					order: 2;
+					width: 100%;
+				}
+
+				#walkP1 {
+					order: 3;
+					width: 100%;
+				}
+
+				#walkP2 {
+					order: 3;
+					width: 100%;
+				}
+
+				.stackedRow {
+					display: flex;
+					width: 100%;
+					flex-direction: column;
+					flex-wrap: wrap;
+
+					h3 {
+						order: 2;
+						width: 100%;
+					}
+
+					p {
+						order: 3;
+						width: 100%;
+					}
+
+					#walkH {
+						order: 2;
+						width: 100%;
+					}
+
+					#walkP1 {
+						order: 3;
+						width: 100%;
+					}
+
+					#walkP2 {
+						order: 3;
+						width: 100%;
+					}
+				}
+
+				.btn {
+					order: 4;
+					width: 90%;
+					.sharedAnimation(topDown, 1s);
+					align-self: center;
+				}
+			}
+
+			#astronaut {
+				order: 1;
+				width: 100%;
+			}
+
+			.walk-img {
+				display: flex;
+				flex-direction: column;
+
+				order: 1;
+				width: 100%;
+
+				img {
+					order: 1;
+					width: 100%;
+					margin: 0;
+					padding: 1%;
+				}
+			}
+		}
+	}
+}
